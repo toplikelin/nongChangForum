@@ -1,0 +1,27 @@
+# Node.js / 前端
+node_modules/
+dist/
+*.log
+.env
+.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+*.db
+.pytest_cache/
+.venv/
+venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# 系统
+.DS_Store
+Thumbs.db
+
+# 微信小程序私有配置
+前端代码/project.private.config.json
+前端代码/project.tt.json

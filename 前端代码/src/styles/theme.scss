@@ -1,0 +1,46 @@
+// ============================================
+// 主题配色变量（交易论坛）
+// 风格：微信绿 + Element Plus 视觉语言
+// ============================================
+
+// 品牌主题色：微信绿
+$color-primary: #07c160;          // 微信品牌绿
+$color-primary-light: #51d97a;     // 浅一档（hover/渐变起点）
+$color-primary-dark: #06ad56;     // 深一档（active/pressed）
+$color-primary-bg: #e8f8ee;        // Element Plus 风格浅绿背景（tip/notice/selected-bg）
+
+// VIP 金色体系（采用 Element Plus warning 色系，更精致）
+$color-vip: #e6a23c;
+$color-vip-light: #f3d19e;
+$color-vip-dark: #b8821f;
+$color-vip-bg: #fdf6ec;            // EP warning-bg
+$gradient-vip: linear-gradient(135deg, #f0c789 0%, #e6a23c 100%);
+
+// 分区色：自由讨论区用微信绿，VIP 收购区用金色
+$color-free: #07c160;
+$gradient-free: linear-gradient(135deg, #51d97a 0%, #07c160 100%);
+$gradient-primary: linear-gradient(135deg, #51d97a 0%, #07c160 100%);
+
+// 功能色（对齐 Element Plus 标准色板）
+$color-success: #67c23a;           // EP success
+$color-warning: #e6a23c;           // EP warning
+$color-error: #f56c6c;             // EP danger
+$color-info: #909399;              // EP info
+
+// 背景色（微信聊天页灰底 + EP 卡片白）
+$color-bg-page: #ededed;           // 微信典型聊天背景灰
+$color-bg-card: #ffffff;
+$color-bg-hover: #f5f7fa;          // EP hover bg（列表项 hover）
+
+// 文本色（对齐 Element Plus 文字层级）
+$color-text-primary: #303133;      // EP primary text
+$color-text-secondary: #606266;   // EP regular text
+$color-text-tertiary: #909399;    // EP secondary text
+$color-text-disabled: #c0c4cc;    // EP placeholder
+$color-text-white: #ffffff;
+
+// 边框色（Element Plus 三级边框体系）
+$color-border: #dcdfe6;           // EP base border（输入框、卡片外边框）
+$color-border-light: #e4e7ed;     // EP light
+$color-border-lighter: #ebeef5;    // EP lighter（分割线、卡片内分割）
+$color-divider: #ebeef5;           // 内部分割线

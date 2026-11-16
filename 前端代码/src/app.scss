@@ -1,0 +1,51 @@
+@use '@/styles/compat.scss';
+@use '@/styles/variables.scss' as *;
+
+// 全局样式
+page {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'PingFang SC', 'Hiragino Sans GB',
+    sans-serif;
+  font-size: $font-size-md;
+  line-height: $line-height-normal;
+  color: $color-text-primary;
+  background-color: $color-bg-page;
+}
+
+// ============================================
+// 微信小程序原生 button 组件样式重置
+// 原生 button 默认有背景色、padding、::after 1px 边框，
+// 会覆盖页面 scoped 样式，必须全局清零才能让页面样式生效。
+// ============================================
+button {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  box-sizing: border-box;
+
+  &::after {
+    border: none;
+  }
+
+  &[disabled] {
+    background-color: transparent;
+    color: inherit;
+    opacity: 0.6;
+  }
+}
+
+// ============================================
+// input/textarea 的 placeholder-class 全局样式
+// placeholder-class 应用的元素在原生组件内部，scoped 样式无法穿透，
+// 必须放在全局才能生效。
+// ============================================
+.input-placeholder {
+  color: #c0c4cc;
+}
+
+.placeholder {
+  color: #c0c4cc;
+}
+
